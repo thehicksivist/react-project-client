@@ -19,30 +19,33 @@ const Carousel = () => {
 				style={{ height: `${window.innerHeight}px`, width: `${window.innerWidth}px` }}
 			>
 				<Slider {...settings}>
-					<div>
+					<div className="container-fluid">
 						<div
-							className="carrousel_image"
+							className="carrousel_image img-fluid"
 							style={{
-								background: `url(https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548814181/Five%20Star/slide_one.png)`,
-								height: `${window.innerHeight}px`
+								background: `url(https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549779685/Five%20Star/slide_one_c.png)`,
+								width: `${window.innerWidth}px`,
+								height: '60vw'
 							}}
 						/>
 					</div>
-					<div>
+					<div className="container-fluid">
 						<div
-							className="carrousel_image"
+							className="carrousel_image img-fluid"
 							style={{
-								background: `url(https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548814182/Five%20Star/slide_two.png)`,
-								height: `${window.innerHeight}px`
+								background: `url(https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549779689/Five%20Star/slide_two_c.png)`,
+								width: `${window.innerWidth}px`,
+								height: '60vw'
 							}}
 						/>
 					</div>
-					<div>
+					<div className="container-fluid">
 						<div
-							className="carrousel_image"
+							className="carrousel_image img-fluid"
 							style={{
-								background: `url(https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548814180/Five%20Star/slide_three.png)`,
-								height: `${window.innerHeight}px`
+								background: `url(https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549779775/Five%20Star/slide_three_c.png)`,
+								width: `${window.innerWidth}px`,
+								height: '60vw'
 							}}
 						/>
 					</div>

@@ -16,7 +16,7 @@ const FormComponent = ({ handleSubmit, services }) => {
     return (
         <div style={{ background: `url(http://res.cloudinary.com/dneussrl1/image/upload/v1549502374/sujan-sundareswaran-583-unsplash.jpg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="flex flex-column justify-center items-center mb-5 mt-5" alt="">
             <div className="image">
-                <img src={header} width="1000" height="600" alt="" />
+                <img src={header} width="100%" height="auto" alt="" />
             </div>
             <form
                 className="w-80"
