@@ -8,7 +8,7 @@ class Navbar extends Component {
 				<div className="container">
 					<a className="navbar-brand" href="/">
 						<img
-							src="https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548904661/Five%20Star/mow-logo.png"
+							src="https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549766796/mow-logo.png"
 							width="300"
 							height="119"
 							className="d-inline-block align-top img-responsive"
