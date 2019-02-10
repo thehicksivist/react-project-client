@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { Component } from 'react';
+import Navbar from './Navbar';
 
-function Header(props) {
-  return (
-      <h1>HEADER</h1>
-//    logo, navbar and phonenumber
-  )
+// import { Link } from 'react-router-dom';
+
+class Header extends Component {
+	state = {
+		headerShow: false
+	};
+	componentDidMount() {
+		window.addEventListener('scroll', this.handleScroll);
+	}
+	handleScroll = () => {
+		if (window.scrollY > 0) {
+			this.setState({
+				headerShow: true
+			});
+		} else {
+			this.setState({
+				headerShow: false
+			});
+		}
+	};
+	render() {
+		return (
+			<div className="Regular shadow">
+				<Navbar />
+			</div>
+		);
+	}
 }
 
-export default Header
+export default Header;

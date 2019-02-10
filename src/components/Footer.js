@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-function Footer(props) {
-  return (
-      <h1>FOOTER</h1>
-//    links
-  )
-}
-
-export default Footer
+const Footer = () => {
+	return (
+			<footer className="footer" >
+				Copyright &copy;{new Date().getFullYear} Five Stars Mowing
+			</footer>
+	);
+};
+export default Footer;

@@ -1,58 +1,37 @@
 import React, { Component } from 'react';
+import './resources/styles.css';
+import './styles/servicestyles.css';
+import Header from './components/Header';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Services from './components/Services/Services';
+import Quote from './components/Quote/Quote';
+import feedback from './components/Feedback';
+import Footers from './components/Footers';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './components/Header'
-import Footer from './components/Footer'
+import './App.css';
 
 class App extends Component {
-  
 	render() {
-	  return (
-		<div className="App">
-		{
+		return (
 			<Router>
-				<div>
-				<Route path="/" render={(props) => (
-					// do we need props? 
-					// highlighted item on navbar
-					<Header/>
-				)} />
-				
-				<Route exact path="/home" render={() => {
-					return 'home'
-					// slides, packages, map
-				}} />
+				<div className="App">
+					<div>
+						<Header className="navbar-fixed-top" />
+					</div>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/about" component={About} />
+					<Route exact path="/services" component={Services} />
+					<Route exact path="/freequote" component={Quote} />
+					<Route exact path="/feedback" component={feedback} />
 
-				<Route exact path="/about" render= {() => {
-					return 'about'
-					// image, text
-				}} />
-
-				<Route exact path="/services" render={() => {
-					return 'services'
-					// list of services, categories?? details??
-				}} />
-
-				<Route exact path="/contact" render={() => {
-					return 'contact'
-					// text, contact form
-				}} />
-
-				<Route exact path="/freequote" render={() => {
-					return 'free quote'
-					// disclaimer/text details, quote form
-				}} />
-
-				<Route path="/" render={(props) => (
-					// do we need props for footer?
-					<Footer/>
-				)} />
+					<div>
+						<Footers />
+					</div>
 				</div>
 			</Router>
-			}
-		</div>
-	  );
+		);
 	}
-
 }
-  
+
 export default App;
