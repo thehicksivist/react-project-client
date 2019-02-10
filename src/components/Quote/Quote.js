@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import FormContainer from './forms/form.container';
+import FormContainer from './form/form.container';
 import configureStore from '../../modules/store';
 
 const store = configureStore();

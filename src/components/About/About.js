@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Text from '../Text'
 
 class About extends Component {
 	render() {
@@ -16,7 +15,7 @@ class About extends Component {
 				<div>
 					<img
 						style={imgStyle}
-						src="https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548736044/Five%20Star/Troy_c.jpg"
+						src="https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408307/Five%20Star/Troy_res.jpg"
 						className="rounded-circle"
 						alt=""
 					/>

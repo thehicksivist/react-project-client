@@ -1,14 +1,14 @@
 import React from 'react';
 import { Field } from 'redux-form';
-import Text from '../text';
-import Select from '../select';
-import Datepicker from '../datepicker';
-import Multiselect from '../multiselect';
+import Text from './packages/text';
+import Select from './packages/select';
+import Datepicker from './packages/datepicker';
+import Multiselect from './packages/multiselect';
 import 'react-widgets/dist/css/react-widgets.css'
 import { reduxForm } from 'redux-form'
-import '../formstyle.css';
-import header from '../header.png';
-import { required } from '../form.validators'
+import './formstyle.css';
+import header from './header.png';
+import { required } from './form.validators'
 
 const FormComponent = ({ handleSubmit, services }) => {
 
