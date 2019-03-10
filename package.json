@@ -1,5 +1,5 @@
 {
-	"name": "client",
+	"name": "fivestarclient",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -21,8 +21,8 @@
 		"redux-form": "^8.1.0"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"start": "npm start",
+		"build": "npm run build",
 		"test": "react-scripts test --env=jsdom",
 		"eject": "react-scripts eject"
 	},
