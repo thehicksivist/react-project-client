@@ -2,7 +2,7 @@ import React from 'react';
 import FormComponent from './form.component';
 import axios from 'axios';
 
-const server = 'http://localhost:5000/freequote';
+const server = 'https://pacific-sands-30449.herokuapp.com/freequote';
 
 class FormContainer extends React.Component {
 	constructor(props) {
@@ -51,7 +51,7 @@ class FormContainer extends React.Component {
 	};
 
 	componentDidMount() {
-		axios.get('http://localhost:5000/services').then((response) => {
+		axios.get('https://pacific-sands-30449.herokuapp.com/services').then((response) => {
 			this.setState({ services: response.data.map((x) => x.name) });
 		});
 	}
